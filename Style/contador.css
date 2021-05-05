@@ -1,0 +1,38 @@
+.btn-inicio{
+    position: absolute;
+    width: 300px;
+    height: 50px;   
+    left: 471px;
+    top: 373px;
+    border: none;
+    font-weight: bold;    
+    background: #2CFF80;
+    border-radius: 20px;
+
+}
+
+.btn-inicio:hover{
+    border: solid 1px #2CFF80;
+    background-color: transparent;
+    color:#2CFF80;
+}
+
+.btn-fim{
+position: absolute;
+width: 300px;
+height: 50px;   
+left: 471px;
+top: 373px;
+border: none;
+font-weight: bold;
+background: #FF452C;
+border-radius: 20px;
+
+}
+
+
+.btn-fim:hover{
+    background-color: transparent;
+    border: solid 1px #FF452C;;
+    color:#FF452C;;
+}
