@@ -1,0 +1,83 @@
+body{
+    font-family: roboto;
+    justify-content: center;
+}
+
+
+.navbar{
+background-color: #c4c4c4;
+font-weight:700;
+padding: 10px;
+line-height: 35px;
+font-size: 25px;
+height: 50px;
+
+}
+
+.cabe{
+ 
+    margin-top: 20px;
+    padding:-20px;
+    display: inline-block;
+    
+    
+  
+}
+.cabe p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 25px;
+    width: 50%;      
+   
+}
+
+span{
+    font-weight: bold;
+    
+      }
+
+.filtro{    
+    font-weight: bold;
+    margin-top: 60px;
+   
+
+}
+
+.principal{
+   
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 0;
+
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 35,16px;
+    font-style: normal;
+    margin: 0;
+}
+
+/* tabela*/
+
+
+.total-horas{
+    float: right;
+    max-width: 200px;
+}
+
+.azul-do-botao{
+    background: rgba(44, 103, 255, 0.62);
+    border-radius: 20px;
+    width: 250px;
+}
+
+a{      
+    text-decoration: none;
+}
+
+.container p{
+    margin-top: 20px;
+}

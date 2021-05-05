@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contador</title>
+        <title>Historico</title>
     
+        
          <!-- fonte -->
          <link rel="preconnect" href="https://fonts.gstatic.com">
          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -23,9 +24,87 @@
     
         </head>
 <body>
+    <header> 
+        <div class="container">
+
+        <div class="col-md-12 navbar">
+            <h3 class="main-title">CONTROLE DE FREQUÊNCIA</h3>
+        </div>
+
+    </div>
+    </header>
+
+<main class="principal">
+
+    <div class="container kb ">
+        <div class="row">
+
+        <div class="col-md-6 cabe">
+            <p> <span> Mês de Referência: </span> Maio </p> 
+            <p> <span>Colaborador:</span> kleitomberg </p>    
+        </div>
+
+        <div class="col-md-6 filtro  text-end"> 
+
+            Filtrar por mês atual:
+        
+            <input type="checkbox" name="filtro" id="ff" class="check">
+           
+        </div>
+    </div>
+    </div> 
+</main>
+
+<!-- tabela de relatório -->
+<div class="container div-table text-center mt-5">
+        
+    <table class="table table-borderless">
+        <thead class=" border-secondary">
+            <tr class="">
+                <th class="col-lg-2" scope="col">DIA</th>
+                <th class="col-lg-3" scope="col">MÊS</th>
+                <th class="col-lg-3" scope="col">HORAS</th>
+                <th class="col-lg-4" scope="col">DESCRIÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="">
+                <td class="col-lg-2">03</td>
+                <td class="col-lg-3">05</td>
+                <td class="col-lg-3">4:00</td>
+                <td class="col-lg-4">Reunião da Equipe de Desenvolvimento</td>
+            </tr>
+            <tr class="">
+                <td class="col-lg-2">03</td>
+                <td class="col-lg-3">05</td>
+                <td class="col-lg-3">4:00</td>
+                <td class="col-lg-4">Reunião da Equipe de Desenvolvimento</td>
+            </tr>
+        </tbody>
+    </table>
 
 
-    
+    <!-- tabela de total de horas -->
+    <table class="table table-borderless  total-horas">
+        <thead class="">
+            <tr class="">
+                <th class="col-lg-2 main-title" scope="col">TOTAL DE HORAS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="">
+                <td class="col-lg-2">00:00:00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- botão de gerar relatório -->
+    <div class="container mt-5">
+            <a href="" class="btn text-dark azul-do-botao" value="Gerar Relatório"><strong>Gerar Relatório</strong></a>
+        <p> <a href="page contador.html"> Voltar </a></p>
+        </div>
+
+</div>
     
 </body>
 </html>
