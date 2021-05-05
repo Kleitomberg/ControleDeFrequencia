@@ -13,6 +13,8 @@ function start() {
      //mudar a função do onclick
 document.getElementById("relogio").value = 'Registrar Saída';
 document.getElementById("relogio").setAttribute('onclick','pause()');
+document.getElementById("relogio").setAttribute("data-bs-toggle","modal");
+document.getElementById("relogio").setAttribute("data-bs-target","#exampleModal");
     cron = setInterval(() => { timer(); }, tempo);
 }
 
@@ -21,6 +23,8 @@ function pause() {
     //mudar a função do onclick
     document.getElementById("relogio").value = 'Registar Entrada';
 document.getElementById("relogio").setAttribute('onclick','start()');
+document.getElementById("relogio").setAttribute("data-bs-toggle","");
+document.getElementById("relogio").setAttribute("data-bs-target","");
     clearInterval(cron);
 }
 
