@@ -1,0 +1,13 @@
+.div-table{
+    max-width: 800px;
+}
+.total-horas{
+    float: right;
+    max-width: 200px;
+}
+
+.azul-do-botao{
+    background: rgba(44, 103, 255, 0.62);
+    border-radius: 20px;
+    width: 250px;
+}
