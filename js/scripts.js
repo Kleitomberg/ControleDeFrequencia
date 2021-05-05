@@ -10,11 +10,17 @@ var cron;
 
 //Inicia o temporizador
 function start() {
+     //mudar a função do onclick
+document.getElementById("relogio").value = 'Registrar Saída';
+document.getElementById("relogio").setAttribute('onclick','pause()');
     cron = setInterval(() => { timer(); }, tempo);
 }
 
 //Para o temporizador mas não limpa as variáveis
 function pause() {
+    //mudar a função do onclick
+    document.getElementById("relogio").value = 'Registar Entrada';
+document.getElementById("relogio").setAttribute('onclick','start()');
     clearInterval(cron);
 }
 
@@ -51,7 +57,7 @@ function timer() {
     return format;
 }
 
-
+//Mudar a class do botão
 var $divLogin = $("#relogio");
 $divLogin.click(function(){
 if ($divLogin.hasClass("btn-inicio"))

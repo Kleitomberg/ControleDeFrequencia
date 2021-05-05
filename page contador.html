@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio</title>
+        <title>Contador</title>
     
          <!-- fonte -->
          <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,18 +24,33 @@
         </head>
 <body>
     <header>
-        <h3>Benvindo Fulano(a) </h3>
+
     </header>
+    <main class="">
+        <div class="container">
+        <div class="col-md=12 texto"> 
 
-    <main>
+        <h3 class="main-title">Horas trabalhadas </h3>
+    
+         </div>
+         <div class="col-md-12">
+   
 
-        <h3 id="contador"> 00:00:00 </h3>
-        <button onclick="start();" class="btn-inicio" id="relogio"> Registar entrada </button>
+        <h3 id="contador" class="clock"> 00:00:00 </h3>
+        </div>
+
+    <div class="col-md-12">
+        <input type="button"  onclick="start();" class="btn-inicio" id="relogio" value="Registar entrada" >
+       <!-- <button onclick="start();" class="btn-inicio" id="relogio"> Registar entrada </button>
+        -->
+        <p> <a href="historico.html"> Ver historico de frequência </a> </p>
+    </div>
+    </div>
     </main>
 
     
 
- 
+
     <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -1,13 +1,12 @@
 .btn-inicio{
-    position: absolute;
+    position:relative;
     width: 300px;
     height: 50px;   
-    left: 471px;
-    top: 373px;
-    border: none;
+        border: none;
     font-weight: bold;    
     background: #2CFF80;
     border-radius: 20px;
+    margin-bottom: 15px;
 
 }
 
@@ -18,15 +17,14 @@
 }
 
 .btn-fim{
-position: absolute;
-width: 300px;
-height: 50px;   
-left: 471px;
-top: 373px;
-border: none;
-font-weight: bold;
-background: #FF452C;
-border-radius: 20px;
+    position:relative;
+    width: 300px;
+    height: 50px;   
+        border: none;
+    font-weight: bold;    
+    background: #FF452C;
+    border-radius: 20px;
+    margin-bottom: 15px;
 
 }
 
@@ -36,3 +34,71 @@ border-radius: 20px;
     border: solid 1px #FF452C;;
     color:#FF452C;;
 }
+
+/* Gerais*/
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    justify-content: center;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 2030px;
+    height: auto;
+    padding: 15px;
+    margin: auto;
+    
+}
+main {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+h3{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.texto{
+    
+    margin-bottom: 20px;
+    
+}
+header{
+    display: block;
+    height: 100%;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-title {
+    color: #444;
+    
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .main-title::after {
+    content: "";
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+  }
