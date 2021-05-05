@@ -16,6 +16,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="Style/contador.css">
+
     
          <!-- jquery -->
          <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -40,7 +41,7 @@
         </div>
 
     <div class="col-md-12">
-        <input type="button"  onclick="start();" class="btn-inicio" id="relogio" value="Registar entrada" >
+        <input type="button"  onclick="start();" class="btn-inicio" id="relogio" value="Registar entrada">
        <!-- <button onclick="start();" class="btn-inicio" id="relogio"> Registar entrada </button>
         -->
         <p> <a href="historico.html"> Ver historico de frequência </a> </p>
@@ -48,9 +49,60 @@
     </div>
     </main>
     
-    
+    <div class="text-center mt-5 mb-3">
+        <a href="#" class="btn btn-lg btn-success rounded-pill" data-bs-toggle="modal" data-bs-target="#modal1" type="submit" value="Salvar">Salvar</a>
+        
 
+        <!-- Modal Comentado Funcionando -->
+            <div class="modal fade bd-example-modal-sm align-middle" id="modal1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Confirmação de Cadastro</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Tem certeza que deseja adicionar um novo serviço?</p>
+                        </div>
+                        
+                        <div class="d-inline modal-footer">
+                            <a href=""></a>
+                            <button class="btn btn-lg btn-success rounded-pill w-25" data-bs-toggle="modal" data-bs-target="#modal2" type="submit" value="Sim">Sim</button>
+                            
+                            <div class="modal fade bd-example-modal-sm align-middle" id="modal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <p>Serviço adicionado com sucesso, deseja adicionar um novo serviço?</p>
+                                        </div>
+                                        
+                                        <div class="d-inline modal-footer">
+                                            <a href="cadastro-de-servicos.html">
+                                                <button class="btn btn-lg btn-success rounded-pill w-25" type="submit" value="Sim">Sim</button>
+                                            </a>
+                                            <a href="../menu-de-serviços/todas-as-categorias.html">
+                                                <button class="btn btn-lg btn-danger rounded-pill w-25" data-dismiss="modal" value="Não">Não</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <button class="btn btn-lg btn-danger rounded-pill w-25" data-dismiss="modal" aria-label="Fechar" value="Não">Não</button>
+                        </div>
+
+        
+
+
+
+                    </div>
+                </div>
+            </div> 
+       
+        </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
 
     <script src="js/scripts.js"></script>
