@@ -47,12 +47,26 @@ form {
     width: 40%;
     height: 40px;
   }
+
+  #inputS {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    border: 1px solid #65daf9;
+    display: inline;
+    box-sizing: border-box;
+    
+    width: 40%;
+    height: 40px;
+  }
   
   #btn {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border: 1px solid #65daf9;
-    background-color: #65daf9;
+    background-color : #65daf9 !important;
     color: rgb(0, 0, 0);
     font-weight:500;
     text-transform: uppercase;
@@ -82,4 +96,63 @@ form {
     position: absolute;
     top: 60px;
     left: 42.5%;
+  }
+
+  
+  .btn-danger{
+    background-color : #65daf9 !important;    
+    border: none !important;   
+    color: rgb(0, 0, 0);
+    font-weight:600;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 0 40px;
+   
+    transition: .5s;
+
+  }
+
+  .btn-danger:hover {
+    background-color: transparent !important;
+    color: #000000 !important;
+    border: 1px solid #65daf9 !important;
+  }
+
+
+  
+
+  
+
+  .btng{
+
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    border: 1px solid #65daf9;
+        
+    
+  }
+  button{
+    justify-content: center;
+  }
+
+  .container{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    
+  }
+
+  button i{
+    color: rgb(255, 255, 255);
+    padding: 0;
+      }
+
+  button i span{
+    padding-left: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
   }
