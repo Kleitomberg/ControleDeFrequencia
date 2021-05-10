@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Historico</title>
     
+        <link rel="shortcut icon" href="/assets/icon.png">
         
          <!-- fonte -->
          <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,10 +47,10 @@
                   mes 
                 </span>
                 </p> 
-            <p> <span class="ng">Colaborador:</span> kleitomberg </p>    
+            <p> <span class="ng">Colaborador:</span> <span id="nome"></span>  </p>    
         </div>
 
-        <div class="col-md-6 filtro  text-end"> 
+        <div class="col-md-6 filtro text-end"> 
 
             Filtrar por mês atual:
         
@@ -115,6 +116,31 @@
 <!--    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
 
 -->
+            <script>
+
+            window.onload = function () {
+
+             firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                // User is signed in.
+                console.log(user.displayName)
+                console.log(user.uid)
+
+                var userId = user.uid;
+                document.getElementById("nome").innerText = user.displayName;
+                ler(userId);
+                
+
+                } else {
+                console.log("erro")
+                // No user is signed in.
+                }
+            }); 
+                         
+                       
+            }
+            </script>
+
 <script type="text/javascript" src="js/banco.js"></script>
 </body>
 </html>

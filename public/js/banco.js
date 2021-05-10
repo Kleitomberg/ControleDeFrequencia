@@ -24,7 +24,9 @@ var db = firebase.firestore();
 
 //ler dados
 
- db.collection("frequencias").onSnapshot(function(documentos){
+function ler(userId){
+
+ db.collection("frequencias").where("userId", "==", userId).onSnapshot(function(documentos){
     documentos.docChanges().forEach(function (changes){
 
         if(changes.type === "added"){
@@ -52,6 +54,7 @@ var db = firebase.firestore();
     })
     
  })
+}
 
 function criarItensTabela(dados){
     
@@ -126,9 +129,32 @@ function criarItensTabela(dados){
  
     document.getElementById("mis").innerText = mes;
 
-    function adicionarDadosBanco(){
+    function sessao(){
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          // User is signed in.
+        //alert("ta logado")
+        console.log(user.displayName)
+        console.log(user.uid)
 
- 
+        var userId = user.uid;
+        adicionarDadosBanco(userId)
+        
+
+        } else {
+          console.log("não")
+          // No user is signed in.
+        }
+      });  
+    }
+
+    function adicionarDadosBanco(userId){
+
+
+   
+             
+    
+
 
         // Adicionar dados        
 
@@ -150,22 +176,19 @@ function criarItensTabela(dados){
             dia: dia,
             mes: mes,
             horas: horas,
-            
-            
+            userId: userId,
+           
+                       
         })
         .then((docRef) => {
             alert("Registro adicionado com sucesso")
-           // console.log("Document written with ID: ", docRef.id);
             setTimeout(function() {
                 window.location.href = "./historico.html";
             }, 1000);
         })
         .catch((error) => {
             alert("Erro: Registro não pode ser adicionado")
-           // console.error("Error adding document: ", error);
         });
-
-
    }
 
   
