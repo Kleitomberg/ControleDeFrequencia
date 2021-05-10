@@ -62,7 +62,7 @@
 </main>
 
 <!-- tabela de relatório -->
-<div class="container div-table text-center mt-5">
+<div class="container div-table text-center mt-5" id="minhaTabela">
         
     <table class="table table-borderless" id="tabela">
         <thead class=" border-secondary">
@@ -100,7 +100,7 @@
 
     <!-- botão de gerar relatório -->
     <div class="container mt-5">
-            <a href="" class="btn text-dark azul-do-botao" value="Gerar Relatório"><strong>Gerar Relatório</strong></a>
+            <a href="" class="btn text-dark azul-do-botao" value="Gerar Relatório" onclick="criarPDF()"><strong>Gerar Relatório</strong></a>
         <p> <a href="page contador.html"> Voltar </a></p>
         </div>
 
@@ -142,5 +142,6 @@
             </script>
 
 <script type="text/javascript" src="js/banco.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
